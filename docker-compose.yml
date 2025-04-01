@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest  # Imagem oficial do PostgreSQL
+    container_name: meu_postgres
+    environment:
+      POSTGRES_USER: postgres    # Nome de usuário do banco
+      POSTGRES_PASSWORD: postgres # Senha do banco
+      POSTGRES_DB: postgres         # Nome do banco de dados (opcional)
+    ports:
+      - "5432:5432"  # Porta do PostgreSQL (host:container)
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Persistência dos dados
+
+volumes:
+  postgres_data:  # Volume para persistir os dados?

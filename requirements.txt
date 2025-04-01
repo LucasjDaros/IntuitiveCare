@@ -1,0 +1,8 @@
+pandas
+sqlalchemy
+python-dotenv
+tabula-py
+jpype1
+requests
+beautifulsoup4
+pytest
